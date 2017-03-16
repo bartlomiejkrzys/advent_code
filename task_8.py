@@ -35,25 +35,3 @@ for r in screen:
 
 # Number of occurences
 print(np.sum(screen == 'X'))
-
-
-# Bez funkcji
-
-##with open(INPUT_FILENAME, 'r') as f:
-##  for i, inst in enumerate(f.readlines()):
-##    if inst.startswith('rect'):
-##      x, y = re.search(rect_pat, inst).groups()
-##      screen[:y, :c] = 'X'
-##    else:
-##      what, idx, by = re.search(rotate_pat, inst).groups()
-##      idx, by = int(idx), int(by)
-##      if what == 'column':
-##        screen[:, idx] = np.roll(screen[:, idx], by)
-##      elif what == 'row':
-##        screen[idx] = np.roll(screen[idx], by)
-##        
-##for r in screen:
-##  print(''.join(r))
-##
-### Number of occurences
-##print(np.sum(screen == 'X'))
