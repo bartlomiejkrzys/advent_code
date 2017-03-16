@@ -57,4 +57,7 @@ class South(Direction):
   def turn_right(self, steps):
     self.coords.y -= steps
     self.side = West
-    
+
+d = Direction((0, 0))
+d.walk(path)
+print(abs(d.coords.x + d.coords.y))
